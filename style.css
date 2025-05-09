@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Boboto', sans-serif;
+    background-color: rgb(216, 208, 208);
+    scroll-behavior: smooth;
+    /* width: 100%; */
+    height: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(6, 82, 82);
+    color: #fff;
+    position :absolute;
+    top: 0;
+    /* left: 0;
+    right: 0; */
+    width: 98.4%;
+}
+
+nav ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 30px 40px;
+}
+ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    /* margin-inline: 20px; */
+    /* margin-left: 50px; */
+    width: 0%;
+    color: #fff;
+}
+ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    display:block;
+    margin: auto;
+}
+ul li a:hover{
+    color: rgb(235, 22, 65);
+    /* transition: 0.5s ease; */
+}
+ul li a:hover::after{
+    width: 100%;
+    transition: All 0.5s ease;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(15, 128, 128);
+    color: white;
+    padding: 8px;
+    height: 600px;
+    width: 100%;
+    margin-top: 55px;
+}
+
+.mainText h1{
+    font-size: 55px;
+    margin: 0 30px;
+}
+.mainText .spanh1{
+    color: rgb(235, 22, 65);
+}
+
+.mainText h3{
+    font-size: 30px;
+    margin-top: 12px;
+    margin: 0 30px;
+}
+.mainText button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    margin-top: 22px;
+    margin: 30px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+.mainText button:hover{
+    background-color:rgb(235, 22, 65) ;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.teams{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #fff; */
+    justify-content: center;
+}
+.teams .card{
+    width: 300px;
+    height: 380px;
+    background-color: #fff;
+    border: 2px solid #333;
+    -webkit-box-shadow: 0 0.5rem 1rem rgb(8, 8, 8);
+    box-shadow: 0 0.5rem 1rem rgb(100, 93, 94);
+    border-radius: 12px;
+    display: -ms-grid;
+    margin: 20px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 22px;
+    transition: all 0.5s ease-out;
+}
+.teams .card:hover{
+    transform:scaleY(1.2);
+    background: rgb(8, 8, 8);
+}
+.teams .card:hover > *{
+    color: #fff;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+.card .mainPara{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(235, 22, 65);
+}
+.card p{
+    margin-top: 11px;
+    color: #333;
+    font-size: 16px;
+    margin:20px 10px px;
+}
+
+.head{
+    text-align: center;
+    padding: 80px;
+}
+.head h1{
+    margin: auto;
+    font-size: 38px;
+    color: rgb(235, 22, 65);
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.head h1::after{
+    content: '';
+    width: 70px;
+    height: 55px;
+    background: linear-gradient(#019587, #fff);
+    position: absolute;
+    top: -80%;
+    left: 0;
+    z-index: -1;
+    transform: rotate(-5deg);
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.speciality{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.speciality .spCard{
+    text-align: center;
+    width: 300px;
+    background-color: white;
+    border: 2px solid #333;
+    margin-inline: 20px;
+    padding: 22px;
+    margin: 20px;
+    border-radius: 10px;
+    margin-top: 22px;
+    transition: 0.5s ease-in-out;
+}
+.speciality .spCard:hover{
+    background: #333;
+}
+.speciality .spCard:hover > *{
+    color: #fff;
+}
+.spCard img{
+    width: 200px;
+    background-color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.speciality .spCard img:hover{
+    color: #fff;
+}
+.speciality .spCard p{
+    margin-top: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.speciality .spCard .spCardP{
+    font-size: 22px;
+    color: rgb(235, 22, 65);
+    font-weight: 600;
+}
+.reviews{
+    width: 900px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+.patientReview{
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 2s ease;
+}
+.patientReview img{
+     width: 400px;
+     margin-inline: 11px;
+     border-radius: 10px;
+}
+.contact{
+    width: 450px;
+    background-color: #fff;
+    padding: 22px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+.contact input{
+    width: 90%;
+    font-size: 18px;
+    padding: 9px;
+    margin-top: 22px;
+    border: none;
+    outline: none;
+    background-color: #e4e1e1;
+    border-radius: 2px;
+}
+.contact button{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(6, 80, 80);
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    margin-top: 22px;
+}
+.contact button:hover{
+    background-color: rgb(235, 22, 65);
+}
+.contact h1{
+    color: rgb(10, 95, 95);
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    margin-top: 66px;
+    background-color: rgb(15, 99, 99);
+    background-image: url(/Image/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: #fff;
+    width: 1285px;
+}
+.copywrite{
+    justify-content: space-around;
+    text-align: center;
+    padding: 8px;
+    background-color: rgb(5, 5, 5);
+    color: #fff;
+    font-weight: 500;
+    width: 1350px;
+}
+.copywrite span{
+    color: rgb(235, 22, 65);
+    font-weight: 700;
+}
+
+.text h3{
+    color: rgb(74, 255, 255);
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.text p{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.text p:hover{
+    color: rgb(235, 22, 65);
+    text-decoration: underline;
+}
+.text p > a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.text p > a:hover{
+    color: rgb(235, 22, 65);
+}
+.text #socialIcon{
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+}
+.text #socialIcon:hover{
+    color: rgb(235, 22, 65);
+}
+.detail{
+    position: fixed;
+    display: none;
+    left: 50%;
+    right: 50%;
+    top: 5%;
+    transform: translate(-50%, 40%);
+    background-color: #fff;
+    padding: 22px;
+    width: 400px;
+    border-radius: 8px;
+}
+.content{
+    display: flex;
+}
+.content img{
+    width: 200px;
+    height: 250px;
+    margin-inline: 22px;
+    border-radius: 4px;
+}
+.content p{
+    margin-top: 22px;
+}
+.detail button{
+    position: relative;
+    top: -23px;
+    left: -22px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(18, 110, 110);
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#bar{
+    display: none;
+    font-size: 32px;
+}
+@media screen and (max-width:1100px){
+    .main{
+        display: block;
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    .mainText{
+        margin-top: 86px;
+    }
+}
+@media screen and (max-width:900px){
+    ul{
+        display: none;
+    }
+    ul li a{
+        display: none;
+    }
+    #bar{
+        display: flex;
+        /* float: right; */
+        /* padding: 50px; */margin-left: 100px;
+    }
+}
+@media screen and (max-width:850px){
+    .reviews{
+        width: 90%;
+        /* background-color: #fff; */
+    }
+    .patientReview img{
+        width: 40%;
+        height: 200px;
+    }
+}
+@media screen and (max-width:600px){
+    .mainText h1{
+        font-size: 33px;
+    }
+    .mainText h3{
+        font-size: 23px;
+    }
+    .main img{
+        width: 90%;
+    }
+    .reviews{
+        width: 80%;
+    }
+    .patientReview img{
+        width: 40%;
+        height: 160px;
+        margin-inline: 6px;
+    }
+    .contact{
+        width: 80%;
+    }
+    .detail{
+        width: 80%;
+    }
+    .content{
+        display: block;
+        text-align: center;
+    }
+    .content img{
+        width: 90%;
+    }
+    .footer{
+        width: 85%;
+        display: block;
+        /* margin-top: 20px; */
+        margin-bottom: 40px;
+    }
+    .copywrite{
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
